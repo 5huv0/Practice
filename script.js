@@ -97,3 +97,21 @@ function Prompt(){
 
 }
 
+//topic 7
+//settimeout / setinterval
+
+
+const timeout = document.getElementById("timeout");
+const interval = document.getElementById("interval");
+
+function timeOut(){
+    setTimeout(function(){
+        timeout.innerHTML = "you clicked timeout";
+    }, 1000);
+}
+
+function Interval(){
+    setInterval(function(){
+        interval.innerHTML = new Date().toLocaleTimeString();
+    }, 1000);
+}
