@@ -54,3 +54,43 @@ function goBack(){
     
     window.history.back();
 }
+
+
+//topic 5
+//window.navigator
+
+//topic 6
+//window.alert / confirm / prompt
+
+function Alert(){
+ window.alert("dont click!!!");  
+}
+
+const Ok = document.getElementById("ok");
+
+function Confirm(){
+    let txt ;
+
+    if(window.confirm("press a button")){
+        txt = "you pressed ok!!";
+    }
+    else{
+        txt = "you pressed cancel";
+    }
+
+    Ok.innerHTML = txt ;
+}
+
+
+function Prompt(){
+    let txt;
+    let person = window.prompt("Enter your name:" , "Hridi");  
+
+    if(person === null || person === ""){
+        txt = "User cancelled the prompt!!"
+    }
+    else{
+        txt = 
+    }
+}
+
