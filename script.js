@@ -81,7 +81,7 @@ function Confirm(){
     Ok.innerHTML = txt ;
 }
 
-
+const Cancle = document.getElementById("cancle");
 function Prompt(){
     let txt;
     let person = window.prompt("Enter your name:" , "Hridi");  
@@ -90,7 +90,10 @@ function Prompt(){
         txt = "User cancelled the prompt!!"
     }
     else{
-        txt = 
+        txt = "Hi " + person + " Are you ok?"
     }
+
+    Cancle.innerHTML = txt;
+
 }
 
