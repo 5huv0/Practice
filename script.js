@@ -36,4 +36,10 @@ const hostname = document.getElementById("hostname");
 const pathname = document.getElementById("pathname");
 const protocol = document.getElementById("protocol");
 
+href.innerHTML = "Window href :" + window.location.;
+hostname.innerHTML = "Window hostname :" + window.location.;
+pathname.innerHTML = "Window pathname :" + window.location.;
+protocol.innerHTML = "Window protocol :" + window.location.;
+
+
 
