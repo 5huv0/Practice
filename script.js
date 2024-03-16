@@ -119,3 +119,26 @@ function Interval(){
 //topic 8
 // cookies
 //document.cookie
+
+
+function setName(cname, cvalue, edays){
+    const d = new Date();
+    d.setTime(d.getTime() + edays * 24 * 60 * 60 * 1000);
+    let expires = " expires = " + d.toUTCString();
+
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+function getName(cname){
+    let name = cname + "=";
+    let ca = document.cookie.split(";");
+
+    for(let i =0 ; i<ca ; i++){
+        let c = ca[i];
+
+        if(c.indexOf(name) === 0){
+            return c.substring(name.length);
+        }
+    }
+}
