@@ -115,3 +115,7 @@ function Interval(){
         interval.innerHTML = new Date().toLocaleTimeString();
     }, 1000);
 }
+
+//topic 8
+// cookies
+//document.cookie
