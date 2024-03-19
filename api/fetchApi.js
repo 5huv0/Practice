@@ -1,5 +1,15 @@
-const display = document.getElementById('display').innerHTML;
+// const display = document.getElementById('display');
 
-function getData(){
-    fetch("");
-}
+// function getData(){
+//     fetch("http://127.0.0.1:5500/practice/api/data.txt")
+//     .then(res => res.text())
+//     .then(data => {
+//         display.innerText = data;
+//     });
+// }
+
+
+// It is promise method
+
+
+
