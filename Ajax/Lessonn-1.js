@@ -6,10 +6,13 @@ function loadData(){
 
     // what to do after response arrives
     xhr.onload = function(){
-        // const container = demo;
+        const container = demo;
         demo.innerHTML = xhr.responseText;
     }
 
     // prepare request methods - get,post,put,options,patch,delete
     xhr.open("GET" , "./data/data.txt");
+
+    //send request 
+    xhr.send();
 }
