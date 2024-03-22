@@ -16,3 +16,5 @@ function loadData(){
     //send request 
     xhr.send();
 }
+
+// Lesson - 2
