@@ -6,7 +6,6 @@ function loadData(){
 
     // what to do after response arrives
     xhr.onload = function(){
-        const container = demo;
         demo.innerHTML = xhr.responseText;
     }
 
@@ -16,7 +15,3 @@ function loadData(){
     //send request 
     xhr.send();
 }
-
-// Lesson - 2
-
-//
