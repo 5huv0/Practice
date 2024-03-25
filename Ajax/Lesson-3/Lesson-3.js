@@ -1,26 +1,20 @@
 const demo = document.getElementById("demo");
-const demo2 = document.getElementById("demo2");
 
-function loadData(callBackF){
+function loadData(){
     // creating a new request 
     const xhr = new XMLHttpRequest();
 
     // what to do after response arrives
     xhr.onload = function(){
-        callBackF(this);
-    };
+
+        console.log("Request done");
+        demo.innerHTML = xhr.responseText;
+    }
 
     // prepare request methods - get,post,put,options,patch,delete
-    xhr.open("GET" , "./data/data.txt");
+    xhr.open("GET" , "./data/data.txt" , true);
 
     //send request 
     xhr.send();
-}
-
-function myCallBack1(xhr){
-    demo.innerHTML = xhr.responseText;
-}
-
-function myCallBack2(xhr){
-    demo2.innerHTML = xhr.responseText;
+    console.log("hi");
 }
