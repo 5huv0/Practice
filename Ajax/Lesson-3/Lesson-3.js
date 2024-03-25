@@ -12,7 +12,8 @@ function loadData(){
     }
 
     // prepare request methods - get,post,put,options,patch,delete
-    xhr.open("GET" , "./data/data.txt" , true);
+    xhr.open("GET" , "./data/data.txt" , false); 
+    // Here true and false means synchronous and asynchronous
 
     //send request 
     xhr.send();
