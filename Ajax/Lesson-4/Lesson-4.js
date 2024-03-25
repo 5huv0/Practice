@@ -6,16 +6,17 @@ function loadData(){
 
     // what to do after response arrives
     xhr.onload = function(){
+        demo.innerHTML = this.responseText;
 
-        console.log("Request done");
-        demo.innerHTML = xhr.responseText;
+        console.log(this.getAllResponseHeaders());
+        console.log(this.getResponseHeader("etag")); //single header information
+
     }
 
     // prepare request methods - get,post,put,options,patch,delete
-    xhr.open("GET" , "./data/data.txt" , false); 
-    // Here true and false means synchronous and asynchronous
+    xhr.open("GET" , "./data/data.txt");
 
     //send request 
     xhr.send();
-    console.log("hi");
+
 }
