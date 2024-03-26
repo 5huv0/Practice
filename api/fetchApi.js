@@ -20,6 +20,5 @@ async function getData(){
   display.innerText = data;
 }
 
-
 // This is async method
 
