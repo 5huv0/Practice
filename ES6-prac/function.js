@@ -1,4 +1,4 @@
-var javascript = {
+ var javascript = {
     name : "javascript",
     libraries : ["angular" , "vue" , "react"],
     printLibraries : function (){
