@@ -1,1 +1,0 @@
-return currentValue > 6;
