@@ -7,3 +7,5 @@ var b = [...numbers , 6, 7, 8, 9];
 console.log(numbers);
 console.log(a);
 console.log(b);
+
+// It can also be used in objects
